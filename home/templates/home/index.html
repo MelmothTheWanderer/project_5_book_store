@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<div id="dark-overlay"></div>
     <div class="container header-container">
         <div class="row">
             <div class="col">
@@ -12,15 +13,20 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md- my-auto">
-                <h1 class = "display-4 logo-font text-black">Browse our collection</h1>
+            <div class="col-7 col-md-6 my-auto">
                 <div class="my-5">
-                    <h4>
-                        <a href="#" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
+                    <div class="browse-backdrop">
+                        <h1 class = "display-4 logo-font text-cream">Browse our collection</h1>
+                        <h4>
+                            <a href="#" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        </h4>
+                    </div>
+                    
                 </div>
+                
             </div>
         </div>
     </div>

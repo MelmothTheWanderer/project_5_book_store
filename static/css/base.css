@@ -7,4 +7,92 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
+    font-family: "Roboto Mono", monospace;
+}
+
+#dark-overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 33, 94, 0.8); /* Black background with opacity */
+    z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#search-icon {
+    color:#FC4100;
+}
+
+button.form-control.btn.btn-black.border.border-black.rounded-0 {
+    background-color: #00215E;
+}
+
+div#topnav {
+    border: 1px solid #FFC55A;
+}
+
+.shop-now-button {
+    background: #FC4100;
+    color: white;
+    min-width: 260px;
+    color: #00215E;
+    border: 5px solid #FFC55A;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background:  #2C4E80;
+    color: #FC4100;
+    border: 2px solid #FC4100;
+    font-size: larger;
+}
+
+.bg-orange { 
+    background-color: #FC4100;
+}
+
+.text-blue {
+    color: #00215E;
+}
+
+.text-cream {
+    color: #FFC55A !important;
+}
+
+.logo-font {
+    text-transform: uppercase;
+    color:#00215E;
+}
+
+header a {
+    text-decoration: none
+}
+
+header * {
+    color: #00215E;
+}
+
+.main-logo-link {
+    width: fit-content;
 }
