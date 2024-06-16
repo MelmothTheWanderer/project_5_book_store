@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
+<!--We want to add some content to the page-->
+{% block content %}
+<!--Lets make a basic bootstrap grid-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {{ books }}
+            </div>
+        </div>
+    </div>
+{% endblock %} 
