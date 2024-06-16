@@ -30,15 +30,15 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
-#search-icon {
+/* color of the magnifying glass in the searchbar */
+.search-icon {
     color:#FC4100;
 }
-
+/* Button in the search bar */
 button.form-control.btn.btn-black.border.border-black.rounded-0 {
     background-color: #00215E;
 }
-
+/* border around the header */ 
 div#topnav {
     border: 1px solid #FFC55A;
 }
@@ -76,13 +76,24 @@ div#topnav {
     color: #00215E;
 }
 
+.text-orange {
+    color:#FC4100 !important;
+}
+
 .text-cream {
     color: #FFC55A !important;
 }
 
 .logo-font {
     text-transform: uppercase;
-    color:#00215E;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
 }
 
 header a {
@@ -95,4 +106,46 @@ header * {
 
 .main-logo-link {
     width: fit-content;
+}
+
+#secondary-navbar { 
+    background-color: #FFC55A; 
+}
+
+main-nav {
+    color:#00215E;
+}
+
+.text-dark-blue {
+    color:#00215E !important;
+}
+
+.dropdown-menu.border-0.show {
+    background-color: #FFC55A ;
+}
+
+
+/*-------------------------------------------- MEDIA QUERIES */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
 }
