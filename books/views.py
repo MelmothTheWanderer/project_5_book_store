@@ -12,5 +12,5 @@ def all_books(request):
         'books' : books
     }
     
-    return render(request, 'home/index.html', context)
+    return render(request, 'books/books.html', context)
 
