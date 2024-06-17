@@ -120,6 +120,10 @@ main-nav {
     color:#00215E !important;
 }
 
+.text-light-blue {
+    color: #2C4E80 !important;    
+}
+
 .dropdown-menu.border-0.show {
     background-color: #FFC55A ;
 }
@@ -147,6 +151,25 @@ main-nav {
     border: 1px solid #00215E;
   }
 
+
+.badge-info {
+    border: 1px solid #00215E;
+    color: #00215E;
+    background-color: #FC4100;
+}
+
+.card {
+    border: 3px solid #FC4100 !important;
+}
+
+.card img {
+    border-bottom: 2px dotted grey !important;
+}
+
+.book-details-container {
+    color:#FFC55A;
+    font-size: smaller;
+}
 /*-------------------------------------------- MEDIA QUERIES */
 
 /* Slightly larger container on xl screens */

@@ -26,11 +26,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if book.image %}
-                                <a href="">
+                                <a href="{% url "book-details" book.id %}">
                                     <img class="card-img-top img-fluid" src="{{ book.image.url }}" alt="{{ book.title }}">
                                 </a>
                                 {% else %}
-                                <a href="">
+                                <a href="{% url "book-details" book.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.title }}">
                                 </a>
                                 {% endif %}
@@ -43,7 +43,7 @@
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ book.price }}</p>
                                             {% if book.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ book.rating }} / 10</small>
+                                                <small class="text-muted"><i class=" text-orange fas fa-star mr-1"></i>{{ book.rating }} / 10</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
