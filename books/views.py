@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from .models import Book
+from .models import Book, Genre
 from django.db.models import Q
 from django.urls import reverse
 
@@ -12,6 +12,13 @@ def all_books(request):
 
     books = Book.objects.all()
     query = None
+    categories = None
+
+    if 'category' in request.GET:
+        categories = request.GET['category'].split(',')
+        books = books.filter(genre__caption__in=categories)
+        categories = Genre.objects.filter(caption__in=categories)
+
 
     if request.GET:
         if 'q' in request.GET:
@@ -26,6 +33,7 @@ def all_books(request):
     context = {
         'books' : books,
         'search_term': query,
+        'current_categories': categories,
     }
     
     return render(request, 'books/books.html', context)

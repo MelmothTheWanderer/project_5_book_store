@@ -51,10 +51,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <strong>Genres:</strong>
-                                            {% for genre in book.genre.all %}
-                                                <span class="badge badge-info">{{ genre.caption}}</span>
-                                            {% endfor %}
+                                            <strong>Genre:</strong>
+                                            <span class="badge badge-info">{{ book.genre}}</span>
                                         </div>
                                     </div>
                                 </div>

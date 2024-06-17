@@ -37,10 +37,8 @@
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
-                    {% for genre in book.genre.all %}
-                        <span class="badge badge-info">{{ genre.caption}}</span>
-                    {% endfor %}
-
+                        <strong class="">Genre: </strong>
+                        <span class="badge badge-info">{{ book.genre}}</span>
                     <hr class="page-divider">
                     <p class=" mt-3">{{ book.blurb }}</p>
                 </div>

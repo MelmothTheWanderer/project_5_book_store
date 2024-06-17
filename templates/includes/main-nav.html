@@ -18,10 +18,10 @@
                 Genres
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Non-Fiction</a>
-                <a href="" class="dropdown-item">Fantasy</a>
-                <a href="" class="dropdown-item">Sci-Fi</a>
-                <a href="" class="dropdown-item">All Books</a>
+                <a href="{% url "books" %}?category=Non-Fiction" class="dropdown-item">Non-Fiction</a>
+                <a href="{% url "books" %}?category=Fantasy" class="dropdown-item">Fantasy</a>
+                <a href="{% url "books" %}?category=Sci-Fi" class="dropdown-item">Sci-Fi</a>
+                <a href="{% url "books" %}" class="dropdown-item">All Books</a>
             </div>
         </li>
         <!--Put more list items here if you need them -->

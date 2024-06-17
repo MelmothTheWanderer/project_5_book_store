@@ -28,6 +28,6 @@ class Book(models.Model):
     title = models.CharField(max_length=250)
     author = models.ForeignKey(Author, null=True, on_delete=models.SET_NULL, related_name="books")
     blurb = models.TextField(validators=[MinLengthValidator(10)])
-    genre = models.ManyToManyField(Genre)
+    genre = models.ForeignKey(Genre , null=True, on_delete=models.SET_NULL)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.IntegerField( default=3, validators=[MaxValueValidator(10), MinValueValidator(1)])
