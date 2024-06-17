@@ -124,6 +124,28 @@ main-nav {
     background-color: #FFC55A ;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #00215E;
+    z-index: -1;
+}
+
+.page-divider {
+    border-color: #FC4100;
+    height: 5px;
+}
+
+.genre {
+    background-color: #FC4100;
+    color:#00215E;
+    padding: 0.5rem 1rem;
+    border-radius: 8px ;
+    border: 1px solid #00215E;
+  }
 
 /*-------------------------------------------- MEDIA QUERIES */
 
@@ -147,5 +169,16 @@ main-nav {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* padding for collapsed navbar on mobile */
+@media (max-width: 991px) {
+    .header-container { 
+        padding-top:116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
