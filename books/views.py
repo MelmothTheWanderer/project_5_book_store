@@ -3,6 +3,7 @@ from django.contrib import messages
 from .models import Book, Genre
 from django.db.models import Q
 from django.urls import reverse
+from django.db.models.functions import Lower
 
 
 # Create your views here.
@@ -21,6 +22,20 @@ def all_books(request):
 
 
     if request.GET:
+
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'title':
+                sortkey = 'lower_title'
+                products = products.annotate(lower_title=Lower('title'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            books = books.order_by(sortkey)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
