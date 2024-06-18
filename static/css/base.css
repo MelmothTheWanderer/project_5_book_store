@@ -188,6 +188,19 @@ span.badge.badge-info:hover {
 #book-count {
     color:#FFC55A !important;
 }
+
+#shopping-bag {
+    background-color: #FFC55A;
+    color: #00215E !important;
+    border-radius: 10px;
+    border: 5px solid #FC4100;
+    margin-top: 10px;
+}
+
+#shopping-bag hr {
+    border-color: #FC4100;
+    height: 5px;
+}
 /*-------------------------------------------- MEDIA QUERIES */
 
 /* Slightly larger container on xl screens */
