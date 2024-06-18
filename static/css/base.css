@@ -201,6 +201,12 @@ span.badge.badge-info:hover {
     border-color: #FC4100;
     height: 5px;
 }
+
+#buy-button {
+    background-color: #FC4100 !important;
+    color:#00215E;
+    border: 1px solid #FFC55A;
+}
 /*-------------------------------------------- MEDIA QUERIES */
 
 /* Slightly larger container on xl screens */
