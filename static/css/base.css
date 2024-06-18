@@ -158,6 +158,12 @@ main-nav {
     background-color: #FC4100;
 }
 
+span.badge.badge-info:hover {
+    background-color: #00215E;
+    color:#FC4100;
+}
+
+
 .card {
     border: 3px solid #FC4100 !important;
 }
@@ -169,6 +175,18 @@ main-nav {
 .book-details-container {
     color:#FFC55A;
     font-size: smaller;
+}
+
+#books-home-link > a {
+    color: #FC4100;
+}
+
+#books-home-link {
+    color: #FFC55A;
+}
+
+#book-count {
+    color:#FFC55A !important;
 }
 /*-------------------------------------------- MEDIA QUERIES */
 

@@ -28,7 +28,7 @@ def all_books(request):
             sort = sortkey
             if sortkey == 'title':
                 sortkey = 'lower_title'
-                products = products.annotate(lower_title=Lower('title'))
+                books = books.annotate(lower_title=Lower('title'))
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
